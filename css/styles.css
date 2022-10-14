@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient(115deg, rgba(85, 110, 131, 0.8), rgba(190, 219, 221, 0.363)), url(https://burst.shopifycdn.com/photos/large-grey-sofa-by-brick-wall.jpg?width=1920&format=pjpg&exif=0&iptc=0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header,
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+/* HEADER */
+
+header {
+    color: #61deeeab;
+    padding-bottom: 1.2rem;
+}
+
+#title {
+    padding: 2rem 0 0 0;
+    font-size: 3rem;
+}
+
+#description {
+    font-size: 1.5rem;
+}
+
+
+
+/* MAIN */
+
+main {
+    background-color: #c8d8e4af;
+    color: #333;
+    padding: 1.2rem 1.5rem;
+    border-radius: 10px;
+    width: 45rem;
+    min-width: 10rem;
+    margin: auto;
+}
+
+fieldset {
+    border-style: none;
+    padding: 0 0 1.3rem 0;
+}
+
+legend {
+    padding-bottom: 1.3rem;
+    font-size: 1.3rem;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+    cursor: pointer;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 1px groove #1997adc5;
+    background-color: #eaf3f3;
+}
+
+
+
+/*** Personal Information Fieldset ***/
+
+.fsPersonal {
+    display: flex;
+    flex-direction: column;
+}
+
+.fsPersonal label {
+    font-size: 1.1rem;
+}
+
+.fsPersonal input {
+    height: 2.5rem;
+    font-size: 1rem;
+    margin: 0.3rem 0 1rem 0;
+    padding: 0.3rem 0 0.2rem 0.7rem;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+
+
+/*** Subscription Type Fieldset ***/
+
+.fsSuscription {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.subsMethod input[type='radio'] {
+    display: none;
+}
+
+.subsMethod input[type='radio']+label::before {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    float: left;
+    margin: 0.5rem 0.5rem 0 0;
+    border: 2px solid #555;
+    border-radius: 100%;
+    background-color: #ddd;
+}
+
+.subsMethod input[type='radio']+label {
+    font-weight: 600;
+    line-height: 2.3rem;
+    color: #555;
+    cursor: pointer;
+}
+
+.subsMethod input[type='radio']:checked+label {
+    color: #1997adc5;
+}
+
+
+.subsMethod input[type='radio']:checked+label::before {
+    border-color: #555;
+}
+
+.subsMethod input[type='radio']:checked+label:after {
+    content: '';
+    width: 0.8rem;
+    height: 0.4rem;
+    border: 4px solid #1997adc5;
+    float: left;
+    margin-left: -1.6rem;
+    border-right: 0;
+    border-top: 0;
+    margin-top: 0.6rem;
+    transform: rotate(-55deg);
+}
+
+
+
+/*** Favourite Fieldset ***/
+
+.fsFavourite select {
+    width: 100%;
+    height: 2.5rem;
+    font-size: 1rem;
+    margin: 0.3rem 0 1rem 0;
+    padding: 0.3rem 0 0.2rem 0.7rem;
+    border: 2px solid gray;
+    border-radius: 5px;
+    color: rgb(100, 100, 100);
+}
+
+option:disabled {
+    color: rgb(156, 155, 155);
+}
+
+/*** Selection Fieldset ***/
+
+.fsSelection {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.slGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.slInput input[type='checkbox'] {
+    display: none;
+}
+
+.slInput input[type='checkbox']+label {
+    font-weight: 600;
+    line-height: 2.2rem;
+    color: #555;
+    cursor: pointer;
+}
+
+.slInput input[type='checkbox']:checked+label {
+    color: #1997adc5;
+}
+
+.slInput input[type='checkbox']+label::before {
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    float: left;
+    margin: 0.5rem 0.5rem 0 0;
+    border: 2px solid #555;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.slInput input[type='checkbox']:checked+label::after {
+    content: '';
+    width: 1rem;
+    height: 0.5rem;
+    border: 4px solid #1997adc5;
+    float: left;
+    margin-left: -1.6rem;
+    margin-top: 0.5rem;
+    border-top: 0;
+    border-right: 0;
+    transform: rotate(-55deg);
+}
+
+
+
+/*** Comments Fieldset ***/
+
+.fsComments {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fsComments textarea {
+    border-radius: 5px;
+    width: 100%;
+    height: 10rem;
+    padding-left: 0.7rem;
+    padding-top: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 100;
+    border: 2px solid #888;
+    resize: none;
+}
+
+
+
+/*** Submit Button ***/
+
+.divSubmit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+#submit {
+    height: 3rem;
+    width: 30%;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ddd;
+    background-color: #5a9299;
+    border: 2px none rgba(75, 75, 75, 0);
+    border-radius: 15px;
+    box-shadow: 0 1px 2px 2px #3f6268c5; */
+
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: lightgray;
+    padding-top: 2rem;
+}
+
+footer a:hover {
+    color: rgba(97, 222, 238, 0.671);
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Subscribe to our Service</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Our Company</h1>
+        <p id="description">The place where all your dreams comes true.</p>
+      </header>
+      <main>
+        <form action="" id="survey-form">
+          <fieldset class="fsPersonal">
+            <legend>Personal Information:</legend>
+            <label id="name-label">Name </label>
+            <input
+              class="field"
+              type="text"
+              id="name"
+              required
+              placeholder="Enter your name..."
+            />
+            <label id="email-label">Email </label>
+            <input
+              class="field"
+              type="email"
+              id="email"
+              required
+              placeholder="Enter your email address..."
+            />
+            <label id="number-label">Age </label>
+            <input
+              class="field"
+              type="number"
+              id="number"
+              min="18"
+              max="100"
+              placeholder="(Optional) Enter your age..."
+            />
+          </fieldset>
+          <fieldset class="fsSuscription">
+            <legend>Subscription type:</legend>
+            <div class="subsMethod">
+              <div>
+                <input
+                  type="radio"
+                  name="subscription"
+                  value="monthly"
+                  id="monthly"
+                />
+                <label for="monthly">Monthly</label>
+              </div>
+            </div>
+            <div class="subsMethod">
+              <div>
+                <input
+                  type="radio"
+                  name="subscription"
+                  value="annualy"
+                  id="annualy"
+                />
+                <label for="annualy">Annualy</label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="fsFavourite">
+            <legend>Please, tell us your favourite:</legend>
+            <select id="dropdown">
+              <option value="" selected disabled>(select an option)</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+              <option value="4">Option 4</option>
+              <option value="5">Others</option>
+            </select>
+          </fieldset>
+          <fieldset class="fsSelection">
+            <legend>Pick your selection:</legend>
+            <div class="slGroup">
+              <div class="slInput">
+                <input type="checkbox" value="1" id="option1" />
+                <label for="option1">Option 1</label>
+              </div>
+              <div class="slInput">
+                <input type="checkbox" value="2" id="option2" />
+                <label for="option2">Option 2</label>
+              </div>
+              <div class="slInput">
+                <input type="checkbox" value="3" id="option3" />
+                <label for="option3">Option 3</label>
+              </div>
+            </div>
+            <div class="slGroup">
+              <div class="slInput">
+                <input type="checkbox" value="4" id="option4" />
+                <label for="option4">Option 4</label>
+              </div>
+              <div class="slInput">
+                <input type="checkbox" value="5" id="option5" />
+                <label for="option5">Option 5</label>
+              </div>
+              <div class="slInput">
+                <input type="checkbox" value="6" id="option6" />
+                <label for="option6">Option 6</label>
+              </div>
+            </div>
+            <div class="slGroup">
+              <div class="slInput">
+                <input type="checkbox" value="7" id="option7" />
+                <label for="option7">Option 7</label>
+              </div>
+              <div class="slInput">
+                <input type="checkbox" value="8" id="option8" />
+                <label for="option8">Option 8</label>
+              </div>
+              <div class="slInput">
+                <input type="checkbox" value="9" id="option9" />
+                <label for="option9">Option 9</label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="fsComments">
+            <legend>Any comments or suggestions?</legend>
+            <textarea placeholder="Enter your comments here..."></textarea>
+          </fieldset>
+          <div class="divSubmit">
+            <input type="submit" id="submit" />
+          </div>
+        </form>
+      </main>
+      <footer>
+        <a
+          href="https://thumbs.dreamstime.com/b/joking-tongue-out-draw-creative-design-160151121.jpg"
+        >
+          Our Company Inc. 2022
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>
